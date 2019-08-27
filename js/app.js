@@ -54,3 +54,28 @@ function reverseText(text) {
 
   return reverse;
 }
+
+
+
+// function formData(event) {
+//   event.preventDefault();
+//   var firstName = event.target.first-name.value;
+//   var lastName = event.target.last-name.value;
+//   var email = event.target.email.value;
+//   var aveSales = event.target.aveSales.value;
+
+//   new Store(store, minCustomer, maxCustomer, aveSales);
+//   reprint();
+//   form.reset();
+// }
+
+
+var types = ['Select One ---', 'Road Conditions', 'Traffic', 'Power', 'Water', 'Park'];
+
+var selectOption = document.getElementById('issue');
+for (var i = 0; i < types.length; i++) {
+  var option = document.createElement('option');
+  option.textContent = types[i];
+  option.value = types[i];
+  selectOption.appendChild(option);
+}
