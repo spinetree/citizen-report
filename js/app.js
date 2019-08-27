@@ -19,6 +19,7 @@ function Report(report) {
     status: 'unread'
   };
   this.date = new Date();
+  this.id = (new Date()).getTime();
 }
 
 var sample1 = {
