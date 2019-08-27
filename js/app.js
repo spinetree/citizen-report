@@ -68,14 +68,3 @@ function reverseText(text) {
 //   reprint();
 //   form.reset();
 // }
-
-
-var types = ['Select One ---', 'Road Conditions', 'Traffic', 'Power', 'Water', 'Park'];
-
-var selectOption = document.getElementById('issue');
-for (var i = 0; i < types.length; i++) {
-  var option = document.createElement('option');
-  option.textContent = types[i];
-  option.value = types[i];
-  selectOption.appendChild(option);
-}
