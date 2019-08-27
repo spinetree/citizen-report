@@ -5,8 +5,54 @@
         <link rel="stylesheet" href="css/reset.css">
         <link rel="stylesheet" href="css/style.css">
     </head>
+
     <body>
-        <main></main>
+        <main>
+        <form id="sales_form">
+            <fieldset>
+                <label for="first-name">First Name:</label>
+                <input type="text" name="first-name" minLength="2"
+                required>
+            </fieldset>
+            
+            <fieldset>
+                <label for="last-name">Last Name:</label>
+                <input type='text' name="last-name" minLength='2' required>
+            </fieldset>
+            
+            <fieldset>
+                <label for="email">Email:</label>
+                <input type='text' name="email" minLength='5'
+                required>
+            </fieldset>
+            
+            <fieldset>
+                <label for="location">Address:</label>
+                <input type='text' name="location"
+                placeholder='Address or ex. 3rd Ave & Pike St.' minLength='3' required size=50>
+            </fieldset>
+            
+            <fieldset>
+                <label for="issue">Issue:</label>
+                <select>
+                    <option value="select-one">Select One ---</option>
+                    <option value="road-conditions">Road Conditions</option>
+                    <option value="traffic">Traffic</option>
+                    <option value="power">Power</option>
+                    <option value="water">Water</option>
+                    <option value="park">Park</option>
+                </select>
+            </fieldset>
+
+            <fieldset>
+                <label for="comments">Comments:</label>
+                <textarea rows="5" cols="50" name="comments" form="citizen-form" placeholder="Enter your comments"></textarea>
+            </fieldset>
+
+            <button id="submit_btn" type="submit">Submit</button>
+            </form>
+        </main>
+    
         <script type="application/javascript" src="js/app.js"></script>
     </body>
 </html>
