@@ -19,7 +19,21 @@ function Report(report) {
   this.date = new Date();
 }
 
+var sampleData = {
+  firstName: 'Karina',
+  lastName: 'Chen',
+  email: 'karina6188@gmail.com',
+  address: '2901 3rd Ave, Seattle, WA 98121',
+  problem: {
+    type: 'road-conditions',
+    text: 'text',
+    priority: 4,
+    status: 'unread',
+  },
+  date: new Date(),
+};
 
+new Report (sampleData);
 
 // function formData(event) {
 //   event.preventDefault();
