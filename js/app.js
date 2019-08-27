@@ -19,21 +19,44 @@ function Report(report) {
   this.date = new Date();
 }
 
-var sampleData = {
-  firstName: 'Karina',
-  lastName: 'Chen',
-  email: 'karina6188@gmail.com',
+var sample1 = {
+  firstName: 'Cassie',
+  lastName: 'Smith',
+  email: 'cassie.smith2@gmail.com',
   address: '2901 3rd Ave, Seattle, WA 98121',
   problem: {
     type: 'road-conditions',
     text: 'text',
-    priority: 4,
-    status: 'unread',
   },
-  date: new Date(),
 };
 
-new Report (sampleData);
+var sample2 = {
+  firstName: 'Jeff',
+  lastName: 'Anderson',
+  email: 'janderson08@hotmail.com',
+  address: '2100 Western Ave, Seattle, 98101',
+  problem: {
+    type: 'power',
+    text: 'text',
+  },
+};
+
+var sample3 = {
+  firstName: 'Leah',
+  lastName: 'Sternoff',
+  email: 'sternoffLeah178@yahoo.com',
+  address: '511 Summit Ave E, Seattle, 98102',
+  problem: {
+    type: 'traffic',
+    text: 'text',
+  },
+};
+
+var sampleData =[sample1, sample2, sample3];
+
+new Report (sample1);
+new Report (sample2);
+new Report (sample3);
 
 // function formData(event) {
 //   event.preventDefault();
