@@ -2,6 +2,8 @@
  * Report constructor
  */
 
+'use strict';
+
 function Report(report) {
   this.firstName = report.firstName;
   this.lastName = report.lastName;
