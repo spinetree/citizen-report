@@ -2,6 +2,8 @@
 
 // Event listener for Form Submitted
 
+var formInformation = [];
+
 function formData(event) {
   event.preventDefault();
 
@@ -9,19 +11,26 @@ function formData(event) {
     firstName: event.target.firstName.value,
     lastName: event.target.lastName.value,
     email: event.target.email.value,
-    address: event.target.location.value,
+    street: event.target.street.value,
+    city: event.target.city.value,
+    state: event.target.state.value,
+    zipCode: event.target.zipcode.value,
     problem: {
       type: event.target.type,
       text: event.target.comments,
     },
   };
 
-  console.log(newReport);
+  formInformation.push(newReport);
   alert('Your report has been submitted');
   new Report(newReport);
 
+  var formInString = JSON.stringify(formInformation);
+  localStorage.setItem('saveForm', formInString);
+
   form.reset();
   document.getElementsByTagName('textarea')[0].value = '';
+  console.log(formInformation);
 }
 
 var form = document.getElementById('report_form');
