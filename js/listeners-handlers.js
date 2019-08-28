@@ -23,15 +23,15 @@ function formData(event) {
 
 
   formInformation.push(newReport);
-  alert('Your report has been submitted');
   new Report(newReport);
 
   var formInString = JSON.stringify(formInformation);
   localStorage.setItem('saveForm', formInString);
 
-  form.reset();
-  document.getElementsByTagName('textarea')[0].value = '';
-  console.log(formInformation);
+  var clearPage = document.getElementById('non-emergency');
+  clearPage.innerHTML = '';
+  var confirmation = document.getElementById('report_form');
+  confirmation.innerHTML ='<span class="confirm">Thank you. Your form has been submitted.</span>';
 }
 
 var form = document.getElementById('report_form');

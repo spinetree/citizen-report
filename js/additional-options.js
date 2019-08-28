@@ -15,7 +15,7 @@ function additionalOptions(){
     document.getElementById('option-details').innerHTML = 'Examples: broken street lights, power line down, power outage.';
   }
   if (i === 'water') {
-    document.getElementById('option-details').innerHTML = 'Examples: busted water vain, broken fire hydrant, flooded/inflated roads,';
+    document.getElementById('option-details').innerHTML = 'Examples: busted water vain, broken fire hydrant, flooded/inflated roads.';
   }
   if (i === 'park') {
     document.getElementById('option-details').innerHTML = 'Examples: broken/damaged play set, malfunctioning restrooms.';
