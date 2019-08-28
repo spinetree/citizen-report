@@ -25,7 +25,7 @@ function Report(report) {
   this.id = (new Date()).getTime();
 }
 
-var formBackToObject = localStorage.getItem('saveForm');
+var formBackToObject = localStorage.getItem('allReports');
 var allForms = JSON.parse(formBackToObject);
 
 console.log(allForms);

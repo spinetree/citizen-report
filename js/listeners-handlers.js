@@ -26,7 +26,7 @@ function formData(event) {
   new Report(newReport);
 
   var formInString = JSON.stringify(formInformation);
-  localStorage.setItem('saveForm', formInString);
+  localStorage.setItem('allReports', formInString);
 
   var clearPage = document.getElementById('non-emergency');
   clearPage.innerHTML = '';
