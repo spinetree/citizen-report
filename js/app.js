@@ -1,6 +1,29 @@
 'use strict';
 
 /**
+ * Global and helper data and functions
+ */
+
+var globalIds = [];
+var makeGlobalId = function() {
+  // Make new distinct id
+  do {
+    var distinct = true;
+    var newId = '_' + Math.random().toString(36).substr(2, 9);
+
+    for (var i = 0; i < globalIds.length; i++) {
+      if (newId === globalIds[i]) {
+        distinct = false;
+      }
+    }
+  } while (!distinct);
+
+  globalIds.push(newId);
+
+  return newId;
+};
+
+/**
  * Report constructor
  */
 
@@ -11,7 +34,7 @@ function Report(report) {
   this.street = report.street;
   this.city = report.city;
   this.state = report.state;
-  this.zipCode = report.zipcode;
+  this.zipCode = report.zipCode;
   this.problem = {
     // Values can be one of [power, water, road condition, traffic, park, other]
     type: report.problem.type,
@@ -22,31 +45,5 @@ function Report(report) {
     status: 'unread'
   };
   this.date = (new Date()).toTimeString();
-  this.id = (new Date()).getTime();
-}
-
-var formBackToObject = localStorage.getItem('saveForm');
-var allForms = JSON.parse(formBackToObject);
-
-console.log(allForms);
-
-/**
- * Render table function
- */
-
-/**
- * Render the reports table
- *
- * @param {Array} filteredReports which is an array of all Reports which passed the filter
- * @param {Object} filterStates which is the states of the reports table filters
- *
- * @return {Object} which is the filteredReports and filterStates together
- */
-function renderTable(filteredReports, filterStates) {
-  var allData = {
-    filteredReports: filteredReports,
-    filterStates: filterStates
-  };
-
-  console.log(allData);
+  this.id = makeGlobalId();
 }
