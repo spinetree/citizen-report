@@ -1,16 +1,18 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>Citizen Report / Report</title>
-        <link href="https://fonts.googleapis.com/css?family=Work+Sans:300,500,700&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="/css/reset.css">
-        <link rel="stylesheet" href="/css/style.css">
-        <!--Before fully deploying with GitHub must edit two links above as well as the two links in header > nav > ul > li-->
-    </head>
-    <body>
 
-        <header>
-            <section class="container">
+<head>
+    <title>Citizen Report / Report</title>
+    <link href="https://fonts.googleapis.com/css?family=Work+Sans:300,500,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/reset.css">
+    <link rel="stylesheet" href="/css/style.css">
+    <!--Before fully deploying with GitHub must edit two links above as well as the two links in header > nav > ul > li-->
+</head>
+
+<body>
+
+    <header>
+        <section class="container">
 
             <h1>Citizen Reports</h1>
             <h3>City Hall Dashboard</h3>
@@ -27,28 +29,95 @@
     <main class="container-fullwidth">
         <h2>Report</h2>
 
+        <section id="table-controls">
+
+            <!-- <section id="status">
+                    <ul>Status:</label>
+                        <li data-status="all"><a href="">All</a></li>
+                        <li data-status="unread"><a href="">Unread</a></li>
+                        <li data-status="read"><a href="">Read</a></li>
+                        <li data-status="in-progress"><a href="">In Progress</a></li>
+                        <li data-status="fixed"><a href="">Fixed</a></li>
+                    </ul>
+                </section>
+            =======
+            alternatively:
+            ========
+
+             <section id="status">
+                    <label for="status">Status:</label>
+                        <option data-status="all" value="all">All</option>
+                        <option data-status="unread" value="unread">Unread</option>
+                        <option data-status="read" value="read">Read</option>
+                        <option data-status="in-progress" value="in-progress">In Progress</option>
+                        <option data-status="fixed" value="fixed">Fixed</option>
+                    </select>
+                </section>
+            
+            =======
+                <section id="search">
+                    <label for="search">Search</label>
+                    <input type ="search" name="search" id="search-box">
+                    <button id="search-button">search</button>  
+                </section>
+                <section id="type">
+                    <label for="type">Type:</label>
+                    <select name="type" id="type-select">
+                        <option value="all">All</option>
+                        <option value="power">Power</option>
+                        <option value="water">Water</option>
+                        <option value="road">Road Condition</option>
+                        <option value="park">Parks</option>
+                        <option value="park">Traffic</option>
+                    </select>
+                </section> -->
+
+            <section id="sort">
+                <label for="sort">Sort:</label>
+                <select name="sort" id="sort-select">
+                    <option value="recent">Most Recent</option>
+                    <option value="Priority">Priority</option>
+                </select>
+            </section>
+
+        </section>
+
         <table id="report-table">
             <thead>
-                <th></th>
+                <th>
+                <td>Issue type</td>
+                <td>Address</td>
+                <td>Reported by</td>
+                <td>Email</td>
+                <td>Reported:</td>
+                <td>status</td>
+                </th>
             </thead>
 
             <tbody id="tableresults">
-                <tr class="emergency">
-                    <!-- class emergency ^^ if priority = 5 , don't worry bout this for now.-->
-                    <td class="type">Report type</td>
-                    <td class="name">First Last</td>
-                    <td class="time">Report time</td>
-                    <td class="zip">Address</td>
+                <tr data-record-id="[record id goes here]" class="emergency [type]">
+                    <!-- class emergency ^^ if (priority = 5). Don't worry bout this for now, stretch goal.-->
+                    <td class="type">Issue type</td>
+                    <td class="address">Address</td>
+                    <td class="name">FirstName LastName</td>
                     <td class="email">email</td>
-                    <td class="controls">Controls go here</td>
+                    <td class="date-time">date-time</td>
+                    <td class="record-status">
+                        <select name="record-status" class="status-select">
+                            <option value="unread">Unread</option>
+                            <option value="read">Read</option>
+                            <option value="in-progress">In Progress</option>
+                            <option value="fixed">Fixed</option>
+                        </select>
+                    </td>
                 </tr>
             </tbody>
 
         </table>
-  
+
     </main>
 
-      
+
     <footer>
         <section class="container">
             <nav>
@@ -74,6 +143,9 @@
     </footer>
 
     <script type="application/javascript" src="/js/app.js"></script>
+    <script type="application/javascript" src="/js/sample-data.js"></script>
+    <script type="application/javascript" src="/js/renderHTML.js"></script>
+    <script type="application/javascript" src="/js/listeners-handlers.js"></script>
 </body>
 
 </html>

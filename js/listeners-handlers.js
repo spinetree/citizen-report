@@ -19,37 +19,8 @@ function formData(event) {
       type: event.target.type,
       text: event.target.comments,
     }
-    // validateEmail: function(email) {
-    //   return /\S+@\S+\.\S+/.test(email)
-    // },
   };
 
-
-
-  // function validateEmail(email){
-
-  //   var mailformat = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
-  //   if(newReport.email.value.match(mailformat))
-  //   {
-  //     document.report_form.email.focus();
-  //     return true;
-  //   }
-  //   else
-  //   {
-  //     alert('You have entered an invalid email address!');
-  //     document.report_form.email.focus();
-  //     return false;
-  //   }
-  // }
-
-  // function validateEmail(){
-  //   if (/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(newReport.email.value))
-  //   {
-  //     return (true);
-  //   }
-  //   alert('You have entered an invalid email address!');
-  //   return (false);
-  // }
 
   formInformation.push(newReport);
   alert('Your report has been submitted');
