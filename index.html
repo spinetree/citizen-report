@@ -31,6 +31,18 @@
             semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</p>
         <form id="report_form">
             <fieldset>
+                <label for="type">Issue:</label>
+                <select name="issue">
+                    <option value="road-conditions">Road Conditions</option>
+                    <option value="traffic">Traffic</option>
+                    <option value="power">Power</option>
+                    <option value="water">Water</option>
+                    <option value="park">Park</option>
+                    <option value="others">Others</option>
+                </select>
+            </fieldset>
+            
+            <fieldset>
                 <label for="first-name">First Name:</label>
                 <input type="text" name="firstName" minLength="2" required>
             </fieldset>
@@ -69,17 +81,7 @@
                     required size=30>
             </fieldset>
 
-            <fieldset>
-                <label for="type">Issue:</label>
-                <select name="issue">
-                    <option value="road-conditions">Road Conditions</option>
-                    <option value="traffic">Traffic</option>
-                    <option value="power">Power</option>
-                    <option value="water">Water</option>
-                    <option value="park">Park</option>
-                    <option value="others">Others</option>
-                </select>
-            </fieldset>
+
 
             <fieldset>
                 <label for="comments">Comments:</label>

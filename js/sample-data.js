@@ -15,7 +15,10 @@ function initSampleData() {
     firstName: 'Cassie',
     lastName: 'Smith',
     email: 'cassie.smith2@gmail.com',
-    address: '2901 3rd Ave, Seattle, WA 98121',
+    street: '2901 3rd Ave',
+    city: 'Seattle',
+    state: 'Washington',
+    zipCode: '98121',
     problem: {
       type: 'road-conditions',
       text: 'text'
@@ -26,7 +29,10 @@ function initSampleData() {
     firstName: 'Jeff',
     lastName: 'Anderson',
     email: 'janderson08@hotmail.com',
-    address: '2100 Western Ave, Seattle, 98101',
+    street: '2100 Western Ave',
+    city: 'Seattle',
+    state: 'Washington',
+    zipCode: '98101',
     problem: {
       type: 'power',
       text: 'text'
@@ -37,7 +43,10 @@ function initSampleData() {
     firstName: 'Leah',
     lastName: 'Sternoff',
     email: 'sternoffLeah178@yahoo.com',
-    address: '511 Summit Ave E, Seattle, 98102',
+    street: '511 Summit Ave E',
+    city: 'Seattle',
+    state: 'Washington',
+    zipCode: '98102',
     problem: {
       type: 'traffic',
       text: 'text'
