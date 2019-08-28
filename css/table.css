@@ -6,6 +6,8 @@
     width:100%;
 }
 
+
+
 thead tr {
     background: #ccc;
     border-bottom: 1px solid black;
@@ -13,7 +15,8 @@ thead tr {
 
 tr {
     display: grid;
-    grid-template-columns: repeat(6, 1fr);
+    grid-auto-columns:1fr;
+    grid-auto-flow:column;
     border-bottom: 1px solid black;
     background: #fefefe;
 }
@@ -36,10 +39,12 @@ th {
 }
 
 td {
-    border-right: 1px solid #bbb;
+    border-right: 1px solid #ddd;
     color:#555;
     font-weight:300px;
     font-size:14px;
+    /* text-overflow:ellipsis; */
+    word-break: break-all;
 }
 
 /* form controls */
