@@ -8,7 +8,10 @@ function Report(report) {
   this.firstName = report.firstName;
   this.lastName = report.lastName;
   this.email = report.email;
-  this.address = report.address;
+  this.street = report.street;
+  this.city = report.city;
+  this.state = report.state;
+  this.zipCode = report.zipcode;
   this.problem = {
     // Values can be one of [power, water, road condition, traffic, park, other]
     type: report.problem.type,
@@ -21,6 +24,12 @@ function Report(report) {
   this.date = (new Date()).toTimeString();
   this.id = (new Date()).getTime();
 }
+
+var formBackToObject = localStorage.getItem('saveForm');
+var allForms = JSON.parse(formBackToObject);
+
+console.log(allForms);
+
 /**
  * Render table function
  */
