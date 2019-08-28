@@ -1,29 +1,28 @@
 'use strict';
 
-/**
- * Turn on event listeners
- */
+// Event listener for Form Submitted
 
-enableEventListeners();
+function formData(event) {
+  event.preventDefault();
 
-function enableEventListeners() {
-  var setPriorityForm = document.getElementById('set-priority');
+  var newReport = {
+    firstName: event.target.firstName.value,
+    lastName: event.target.lastName.value,
+    email: event.target.email.value,
+    address: event.target.location.value,
+    problem: {
+      type: event.target.type,
+      text: event.target.comments,
+    },
+  };
 
-  setPriorityForm.addEventListener('submit', setPriorityEventListener);
+  console.log(newReport);
+  alert('Your report has been submitted');
+  new Report(newReport);
+
+  form.reset();
+  document.getElementsByTagName('textarea')[0].value = '';
 }
 
-/**
- * Event listeners
- */
-
-function setPriorityEventListener(e) {
-  e.preventDefault();
-
-  setPriorityEventHander(e);
-}
-
-/**
- * Event Handlers
- */
-
-function setPriorityEventHander(e) {}
+var form = document.getElementById('report_form');
+form.addEventListener('submit', formData);
