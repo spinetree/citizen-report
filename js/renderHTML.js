@@ -35,15 +35,15 @@ function renderTable() {
     tdFirstName.textContent = `${allReports[i].firstName} ${allReports[i].lastName}`;
     tr.appendChild(tdFirstName);
 
-    // Make table cell for time of problem reported
-    var tdDate = document.createElement('td');
-    tdDate.textContent = allReports[i].date;
-    tr.appendChild(tdDate);
-
     // Make table cell for email of reporter
     var tdEmail = document.createElement('td');
     tdEmail.textContent = allReports[i].email;
     tr.appendChild(tdEmail);
+
+    // Make table cell for time of problem reported
+    var tdDate = document.createElement('td');
+    tdDate.textContent = allReports[i].date;
+    tr.appendChild(tdDate);
 
     // Make table cell for status
     // which is dynamic to the member of city hall reading the table
