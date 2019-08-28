@@ -18,8 +18,9 @@ function formData(event) {
     problem: {
       type: event.target.type,
       text: event.target.comments,
-    },
+    }
   };
+
 
   formInformation.push(newReport);
   alert('Your report has been submitted');

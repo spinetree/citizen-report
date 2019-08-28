@@ -31,6 +31,18 @@
             semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</p>
         <form id="report_form">
             <fieldset>
+                <label for="type">Issue:</label>
+                <select name="issue">
+                    <option value="road-conditions">Road Conditions</option>
+                    <option value="traffic">Traffic</option>
+                    <option value="power">Power</option>
+                    <option value="water">Water</option>
+                    <option value="park">Park</option>
+                    <option value="others">Others</option>
+                </select>
+            </fieldset>
+            
+            <fieldset>
                 <label for="first-name">First Name:</label>
                 <input type="text" name="firstName" minLength="2" required>
             </fieldset>
@@ -42,7 +54,7 @@
 
             <fieldset>
                 <label for="email">Email:</label>
-                <input type='text' name="email" minLength='5' required size=25>
+                <input type='email' name="email" minLength='5' required size=25>
             </fieldset>
 
             <fieldset>
@@ -59,27 +71,17 @@
 
             <fieldset>
                 <label for="state">State:</label>
-                <input type='text' name="state" minLength='3'
+                <input type='text' name="state" minLength='2'
                     required size=40>
             </fieldset>
 
             <fieldset>
                 <label for="zipcode">Zip Code:</label>
-                <input type='text' name="zipcode" minLength='3'
+                <input type='number' name="zipcode" minLength='5'
                     required size=30>
             </fieldset>
 
-            <fieldset>
-                <label for="type">Issue:</label>
-                <select name="issue">
-                    <option value="road-conditions">Road Conditions</option>
-                    <option value="traffic">Traffic</option>
-                    <option value="power">Power</option>
-                    <option value="water">Water</option>
-                    <option value="park">Park</option>
-                    <option value="others">Others</option>
-                </select>
-            </fieldset>
+
 
             <fieldset>
                 <label for="comments">Comments:</label>
