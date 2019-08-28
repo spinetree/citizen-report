@@ -21,3 +21,23 @@ function Report(report) {
   this.date = (new Date()).toTimeString();
   this.id = (new Date()).getTime();
 }
+/**
+ * Render table function
+ */
+
+/**
+ * Render the reports table
+ *
+ * @param {Array} filteredReports which is an array of all Reports which passed the filter
+ * @param {Object} filterStates which is the states of the reports table filters
+ *
+ * @return {Object} which is the filteredReports and filterStates together
+ */
+function renderTable(filteredReports, filterStates) {
+  var allData = {
+    filteredReports: filteredReports,
+    filterStates: filterStates
+  };
+
+  console.log(allData);
+}
