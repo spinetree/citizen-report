@@ -17,10 +17,11 @@ function formData(event) {
   };
 
   console.log(newReport);
-
+  alert('Your report has been submitted');
   new Report(newReport);
 
   form.reset();
+  document.getElementsByTagName('textarea')[0].value = '';
 }
 
 var form = document.getElementById('report_form');
