@@ -14,23 +14,21 @@ function Report(report) {
   this.zipCode = report.zipcode;
   this.problem = {
     // Values can be one of [power, water, road condition, traffic, park, other]
-    type: report.type,
-    text: report.text,
+    type: report.problem.type,
+    text: report.problem.text,
     // Values can be one of [1 ... 5] with default 5
-    priority: 5,
+    // priority: 5,
     // Values can be one of [unread, read, in progresss, fixed] with default unread
     status: 'unread'
   };
-  this.date = new Date();
+  this.date = (new Date()).toTimeString();
   this.id = (new Date()).getTime();
 }
-
 
 var formBackToObject = localStorage.getItem('saveForm');
 var allForms = JSON.parse(formBackToObject);
 
 console.log(allForms);
-
 
 /**
  * Render table function
@@ -52,4 +50,3 @@ function renderTable(filteredReports, filterStates) {
 
   console.log(allData);
 }
-
