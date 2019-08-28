@@ -1,0 +1,58 @@
+
+/* report table */
+
+#report-table {
+    margin-top: 24px;
+    width:100%;
+}
+
+
+
+thead tr {
+    background: #ccc;
+    border-bottom: 1px solid black;
+}
+
+tr {
+    display: grid;
+    grid-auto-columns:1fr;
+    grid-auto-flow:column;
+    border-bottom: 1px solid black;
+    background: #fefefe;
+}
+
+td:last-child,
+th:last-child {
+    border: none;
+}
+
+td,
+th {
+    padding: 16px;
+}
+
+th {
+    border-right: 1px solid #666;
+    font-weight:700;
+    font-size:18px;
+    text-align:left;
+}
+
+td {
+    border-right: 1px solid #ddd;
+    color:#555;
+    font-weight:300px;
+    font-size:14px;
+    /* text-overflow:ellipsis; */
+    word-break: break-all;
+}
+
+/* form controls */
+
+#table-controls {
+    padding: 16px;
+    background: #ccc;
+    margin-top: 24px;
+}
+
+.status-select {width:100%;}
