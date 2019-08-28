@@ -26,7 +26,3 @@ function formData(event) {
 
 var form = document.getElementById('report_form');
 form.addEventListener('submit', formData);
-
-
-// Event listener for Sort By
-// document.getElementById('sort-by').addEventListener('change', sortByType);

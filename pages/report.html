@@ -5,40 +5,75 @@
         <link href="https://fonts.googleapis.com/css?family=Work+Sans:300,500,700&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="/css/reset.css">
         <link rel="stylesheet" href="/css/style.css">
+        <!--Before fully deploying with GitHub must edit two links above as well as the two links in header > nav > ul > li-->
     </head>
     <body>
 
         <header>
+            <section class="container">
+
             <h1>Citizen Reports</h1>
+            <h3>City Hall Dashboard</h3>
             <nav>
                 <ul>
-                    <li><a href="index.html" title="home">Home</a></li>
-                    <li><a href="pages/about.html" title="about">About</a></li>
+                    <li><a href="/index.html" title="home">Home</a></li>
+                    <li><a href="/pages/about.html" title="about">About</a></li>
                 </ul>
             </nav>
-        </header>
 
-        <main>
+        </section>
+    </header>
 
-            <h2>Report</h2>
+    <main class="container-fullwidth">
+        <h2>Report</h2>
 
-        </main>
+        <table id="report-table">
+            <thead>
+                <th></th>
+            </thead>
 
-        <footer>
-            <h3>Citizen Report</h3>
+            <tbody id="tableresults">
+                <tr class="emergency">
+                    <!-- class emergency ^^ if priority = 5 , don't worry bout this for now.-->
+                    <td class="type">Report type</td>
+                    <td class="name">First Last</td>
+                    <td class="time">Report time</td>
+                    <td class="zip">Address</td>
+                    <td class="email">email</td>
+                    <td class="controls">Controls go here</td>
+                </tr>
+            </tbody>
+
+        </table>
+  
+    </main>
+
+      
+    <footer>
+        <section class="container">
             <nav>
-                <h4>Sitemap</h4>
-                <ul>
-                    <li><a href="index.html" title="home">Home</a></li>
-                    <li><a href="pages/about.html" title="about">About</a></li>
-                </ul>
-                <ul id="cityhallonly">
+                <section>
+                    <h3>Citizen Report</h3>
+                    <p>&copy; 2019 Funky Space Needle</p>
+                </section>
+                <section>
+                    <h4>Sitemap</h4>
+                    <ul>
+                        <li><a href="index.html" title="home">Home</a></li>
+                        <li><a href="pages/about.html" title="about">About</a></li>
+                    </ul>
+                </section>
+                <section>
                     <h4>City Hall Use Only</h4>
-                    <li><a href="pages/report.html" title="report">View Reports</a></li>
-                </ul>
+                    <ul id="cityhallonly">
+                        <li><a href="pages/report.html" title="report">View Reports</a></li>
+                    </ul>
+                </section>
             </nav>
-        </footer>
+        </section>
+    </footer>
 
-        <script type="application/javascript" src="/js/app.js"></script>
-    </body>
+    <script type="application/javascript" src="/js/app.js"></script>
+</body>
+
 </html>
