@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 'use strict';
 
 // Event listener for Form Submitted
@@ -27,38 +26,3 @@ function formData(event) {
 
 var form = document.getElementById('report_form');
 form.addEventListener('submit', formData);
-
-
-// Event listener for Sort By
-// document.getElementById('sort-by').addEventListener('change', sortByType);
-=======
-'use strict';
-
-/**
- * Turn on event listeners
- */
-
-enableEventListeners();
-
-function enableEventListeners() {
-  var setPriorityForm = document.getElementById('set-priority');
-
-  setPriorityForm.addEventListener('submit', setPriorityEventListener);
-}
-
-/**
- * Event listeners
- */
-
-function setPriorityEventListener(e) {
-  e.preventDefault();
-
-  setPriorityEventHander(e);
-}
-
-/**
- * Event Handlers
- */
-
-function setPriorityEventHander(e) {}
->>>>>>> 7cb768cb48f3be97e7fce0df7c5e005b695ad5f1
