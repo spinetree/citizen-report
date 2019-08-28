@@ -46,6 +46,18 @@ main {
     min-height: 480px;
 }
 
+.about {
+    margin-top: 16px;
+    margin-bottom: 16px;
+}
+
+.about h2 {
+    text-align: center;
+}
+
+img {
+    margin-top: 16px;
+}
 
 footer {
     padding: 24px;
