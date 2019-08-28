@@ -1,3 +1,5 @@
+'use strict';
+
 var sample1 = {
   firstName: 'Cassie',
   lastName: 'Smith',
@@ -31,11 +33,7 @@ var sample3 = {
   }
 };
 
-var sampleData =[sample1, sample2, sample3];
-
-new Report (sample1);
-new Report (sample2);
-new Report (sample3);
+var sampleData = [new Report(sample1), new Report(sample2), new Report (sample3)];
 
 // function formData(event) {
 //   event.preventDefault();
