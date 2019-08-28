@@ -5,8 +5,8 @@ var sample1 = {
   address: '2901 3rd Ave, Seattle, WA 98121',
   problem: {
     type: 'road-conditions',
-    text: 'text',
-  },
+    text: 'text'
+  }
 };
 
 var sample2 = {
@@ -16,8 +16,8 @@ var sample2 = {
   address: '2100 Western Ave, Seattle, 98101',
   problem: {
     type: 'power',
-    text: 'text',
-  },
+    text: 'text'
+  }
 };
 
 var sample3 = {
@@ -27,24 +27,8 @@ var sample3 = {
   address: '511 Summit Ave E, Seattle, 98102',
   problem: {
     type: 'traffic',
-    text: 'text',
+    text: 'text'
   }
 };
 
-var sampleData =[sample1, sample2, sample3];
-
-new Report (sample1);
-new Report (sample2);
-new Report (sample3);
-
-// function formData(event) {
-//   event.preventDefault();
-//   var firstName = event.target.first-name.value;
-//   var lastName = event.target.last-name.value;
-//   var email = event.target.email.value;
-//   var aveSales = event.target.aveSales.value;
-
-//   new Store(store, minCustomer, maxCustomer, aveSales);
-//   reprint();
-//   form.reset();
-// }
+var sampleData = [new Report(sample1), new Report(sample2), new Report(sample3)];
