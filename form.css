@@ -1,54 +1,89 @@
 /* report form */
 
 #report_form {
-    display: grid;
-    grid-gap: 16px;
-    max-width: 600px;
-    border: 1px solid #c1c1c1;
-    margin: 2rem auto 0 auto;
-    padding-left: 24px;
-    padding-right: 24px;
-    padding-bottom: 32px;
-    padding-top: 48px;
+    /* display: grid; */
 }
 
-#report_form > fieldset {
-    display: grid;
-    grid-template: 1fr 2fr;
+#report_form>fieldset {
+    /* display: grid; */
+    /* grid-gap: 16px;
+    grid-template: 1fr 2fr; */
 }
+
+
+#report_form label {
+    text-align: left;
+    display: block;
+    max-width: 192px;
+    margin-right: 16px;
+    margin-top: 24px;
+    font-size: 24px;
+    font-weight: 300;
+    font-family: 'Work Sans', sans-serif;
+}
+
+#report_form>fieldset>input,
+#report_form>fieldset>select,
+#report_form>fieldset>textarea {
+    background: #fff;
+    border: none;
+    text-align: left;
+    width: 90%;
+    height: 32px;
+    padding: 12px 8px;
+    margin-top: 8px;
+    font-size: 18px;
+    font-weight: 500;
+    font-family: 'Work Sans', sans-serif;
+}
+
+#report_form>fieldset:nth-child(8)>input {
+    width: 100px;
+}
+
+#report_form>fieldset:nth-child(9)>input {
+    width: 100px;
+    clear: both;
+}
+
 
 #submit_btn {
     padding: 0.7em;
     border: 0;
     background: rgba(255, 60, 0, 0.959);
-    color: #fff;
-    width: 100%;
+    color: #fefefe;
+    display: block;
     font-size: 18px;
     font-weight: 500;
-    line-height: 44px;
+    width: 100%;
     font-family: 'Work Sans', sans-serif;
+    margin-top: 24px;
 
 }
 
-#report_form > fieldset > label {
-    text-align: left;
-    grid-column: 1 / 2;
-    max-width: 192px;
-    margin-right: 16px;
+#submit_btn:hover {
+    cursor: pointer;
+    background: rgba(225, 30, 0, 1);
 }
 
-#report_form > fieldset > input {
-    background: #fff;
-    border: none;
-    text-align: left;
-    width: 290px;
-    height: 32px;
+#non-emergency {
+    margin-top: 24px;
+    padding: 16px;
+    border: solid 2px #f25116;
+    background-color: #ffeae3;
 }
 
-#report_form > fieldset:nth-child(8) > input{
-    width: 32px;
+#non-emergency h4 {
+    margin-top: 0;
+    color: #f25116;
 }
 
-#report_form > fieldset:nth-child(9) > input{
-    width: 56px;
+.confirm {
+    font-size: 36px;
+    font-weight: 500;
+    margin-top: 64px;
+}
+
+#report_form[_lpchecked="1"] + #non-emergency {
+    display: none;
 }
