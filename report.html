@@ -7,16 +7,10 @@
     <!-- *** NOTICE ***
         Remove prefix forward-slash (/) to deploy to GitHub Pages
         Add prefix forward-slash (/) to develop locally with VSCode Live Server -->
-    <link rel="stylesheet" href="/css/reset.css">
-    <link rel="stylesheet" href="/css/style.css">
-<<<<<<< HEAD
-
-<!-- some HTML in this page used starter html from
-        https://www.webfx.com/web-design/html-ipsum/ -->
-
-=======
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
     <!-- some HTML in this page used starter html from https://www.webfx.com/web-design/html-ipsum/ -->
->>>>>>> b38ff36ca750755e99c3ff083ba6872c0091a68c
+
 </head>
 
 <body>
@@ -24,15 +18,15 @@
     <header>
         <section class="container">
 
-            <img src="/assets/citizen-report-logo.png"  alt="citizen report logo" title="Citizen Report" />
+            <img src="citizen-report-logo.png"  alt="citizen report logo" title="Citizen Report" />
            <h3>City Hall Dashboard</h3>
             <nav>
                 <ul>
                     <!-- *** NOTICE ***
                         Remove prefix forward-slash (/) to deploy to GitHub Pages
                         Add prefix forward-slash (/) to develop locally with VSCode Live Server -->
-                    <li><a href="/index.html" title="home">Home</a></li>
-                    <li><a href="/pages/about.html" title="about">About</a></li>
+                    <li><a href="index.html" title="home">Home</a></li>
+                    <li><a href="about.html" title="about">About</a></li>
                 </ul>
             </nav>
 
@@ -42,9 +36,9 @@
     <main class="container-fullwidth">
         <h2>Report</h2>
 
-        <section id="table-controls">
+        <!-- <section id="table-controls">
 
-            <!-- <section id="status">
+             <section id="status">
                     <ul>Status:</label>
                         <li data-status="all"><a href="">All</a></li>
                         <li data-status="unread"><a href="">Unread</a></li>
@@ -83,17 +77,17 @@
                         <option value="park">Parks</option>
                         <option value="park">Traffic</option>
                     </select>
+                    <section id="sort">
+                        <label for="sort">Sort:</label>
+                        <select name="sort" id="sort-select">
+                            <option value="recent">Most Recent</option>
+                            <option value="Priority">Priority</option>
+                        </select>
+                    </section>
                 </section> -->
 
-            <section id="sort">
-                <label for="sort">Sort:</label>
-                <select name="sort" id="sort-select">
-                    <option value="recent">Most Recent</option>
-                    <option value="Priority">Priority</option>
-                </select>
-            </section>
 
-        </section>
+        <!-- </section> -->
 
         <table id="report-table">
             <thead>
@@ -108,22 +102,7 @@
             </thead>
 
             <tbody id="tableresults">
-                <!-- <tr data-record-id="[record id goes here]" class="emergency [type]"> -->
-                    <!-- class emergency ^^ if (priority = 5). Don't worry bout this for now, stretch goal.-->
-                    <!-- <td class="type">Issue type</td>
-                    <td class="address">Address</td>
-                    <td class="name">FirstName LastName</td>
-                    <td class="email">email</td>
-                    <td class="date-time">date-time</td>
-                    <td class="record-status">
-                        <select name="record-status" class="status-select">
-                            <option value="unread">Unread</option>
-                            <option value="read">Read</option>
-                            <option value="in-progress">In Progress</option>
-                            <option value="fixed">Fixed</option>
-                        </select>
-                    </td>
-                </tr> -->
+
             </tbody>
 
         </table>
@@ -141,38 +120,26 @@
                 <section>
                     <h4>Sitemap</h4>
                     <ul>
-<<<<<<< HEAD
-=======
-                        <!-- *** NOTICE ***
-                            Remove prefix forward-slash (/) to deploy to GitHub Pages
-                            Add prefix forward-slash (/) to develop locally with VSCode Live Server -->
->>>>>>> b38ff36ca750755e99c3ff083ba6872c0091a68c
-                        <li><a href="/index.html" title="home">Home</a></li>
-                        <li><a href="/pages/about.html" title="about">About</a></li>
+
+                        <li><a href="index.html" title="home">Home</a></li>
+                        <li><a href="about.html" title="about">About</a></li>
                     </ul>
                 </section>
+
                 <section>
                     <h4>City Hall Use Only</h4>
                     <ul id="cityhallonly">
-<<<<<<< HEAD
-=======
-                        <!-- *** NOTICE ***
-                            Remove prefix forward-slash (/) to deploy to GitHub Pages
-                            Add prefix forward-slash (/) to develop locally with VSCode Live Server -->
->>>>>>> b38ff36ca750755e99c3ff083ba6872c0091a68c
-                        <li><a href="/pages/report.html" title="report">View Reports</a></li>
+
+                        <li><a href="report.html" title="report">View Reports</a></li>
                     </ul>
                 </section>
             </nav>
         </section>
     </footer>
 
-    <!-- *** NOTICE ***
-        Remove prefix forward-slash (/) to deploy to GitHub Pages
-        Add prefix forward-slash (/) to develop locally with VSCode Live Server -->
-    <script type="application/javascript" src="/js/app.js"></script>
-    <script type="application/javascript" src="/js/renderHTML.js"></script>
-    <script type="application/javascript" src="/js/listeners-handlers.js"></script>
+    <script type="application/javascript" src="app.js"></script>
+    <script type="application/javascript" src="renderHTML.js"></script>
+    <script type="application/javascript" src="listeners-handlers.js"></script>
 </body>
 
 </html>
