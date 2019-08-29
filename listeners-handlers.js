@@ -58,7 +58,7 @@ function formData(event) {
     state: event.target.state.value,
     zipCode: event.target.zipcode.value,
     problem: {
-      type: event.target.type,
+      type: event.target.issue.value,
       text: event.target.comments
     }
   };
