@@ -1,0 +1,54 @@
+/* report form */
+
+#report_form {
+    display: grid;
+    grid-gap: 16px;
+    max-width: 600px;
+    border: 1px solid #c1c1c1;
+    margin: 2rem auto 0 auto;
+    padding-left: 24px;
+    padding-right: 24px;
+    padding-bottom: 32px;
+    padding-top: 48px;
+}
+
+#report_form > fieldset {
+    display: grid;
+    grid-template: 1fr 2fr;
+}
+
+#submit_btn {
+    padding: 0.7em;
+    border: 0;
+    background: rgba(255, 60, 0, 0.959);
+    color: #fff;
+    width: 100%;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 44px;
+    font-family: 'Work Sans', sans-serif;
+
+}
+
+#report_form > fieldset > label {
+    text-align: left;
+    grid-column: 1 / 2;
+    max-width: 192px;
+    margin-right: 16px;
+}
+
+#report_form > fieldset > input {
+    background: #fff;
+    border: none;
+    text-align: left;
+    width: 290px;
+    height: 32px;
+}
+
+#report_form > fieldset:nth-child(8) > input{
+    width: 32px;
+}
+
+#report_form > fieldset:nth-child(9) > input{
+    width: 56px;
+}
