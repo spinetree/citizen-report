@@ -2,9 +2,12 @@
 @import url("table.css");
 @import url("form.css");
 
+
+
 body {
     background-color: #B2CED9;
     color: #333333;
+    box-sizing: border-box;
 }
 
 header {
@@ -18,32 +21,34 @@ header {
 }
 
 header .container {
-    max-width:none;
+    max-width: none;
 }
 
-header img {margin:48px auto 0;}
+header img {
+    margin: 48px auto 0;
+}
 
 /* header h3 {margin-top:24px;} */
 
 header nav {
-    background:#041326;
+    background: #041326;
     margin: 24px auto 0;
-    height:80px;
-    display:block;
+    height: 80px;
+    display: block;
 }
 
 header nav ul {
-    display:grid;
+    display: grid;
     grid-template-columns: 50% 50%;
-    text-align:center;
+    text-align: center;
 
 }
 
 header nav li a {
-font: 22px/80px 'Work Sans', helvetica, sans-serif;
-color: #A7C8F2;
-text-transform:uppercase;
-font-weight: 300;
+    font: 22px/80px 'Work Sans', helvetica, sans-serif;
+    color: #A7C8F2;
+    text-transform: uppercase;
+    font-weight: 300;
 }
 
 .container.home {
@@ -51,6 +56,7 @@ font-weight: 300;
     margin: 48px auto;
     box-shadow: 2px 4px 8px 0 rgba(0, 0, 0, 0.2);
     background-color: #f4f4f4;
+    padding: 48px;
 }
 
 /* specific to front page and ffs this is ugly */
@@ -63,8 +69,8 @@ font-weight: 300;
 main {
     padding: 24px;
     min-height: 480px;
-    max-width:960px;
-    margin:48px auto;
+    max-width: 960px;
+    margin: 48px auto;
 
 }
 
@@ -83,7 +89,7 @@ img {
 
 footer {
     padding: 24px;
-    background:#041326;
+    background: #041326;
     color: white;
 }
 
@@ -94,13 +100,24 @@ footer nav {
     text-align: left;
 }
 
-footer h3, footer h4 {
-    color:#048ABF;
+footer h3,
+footer h4 {
+    color: #048ABF;
 }
 
 footer ul {}
 
-footer ul li, footer ul li a {
+footer ul li,
+footer ul li a {
     margin: 16px 0 0;
-    color:#A7C8F2;
+    color: #A7C8F2;
 }
+
+.about img {
+    border: 10px solid white;
+    max-width: 480px;
+    display: block;
+    box-shadow: 2px 4px 8px 0 rgba(0, 0, 0, 0.2);
+    margin:24px auto;
+}
+
