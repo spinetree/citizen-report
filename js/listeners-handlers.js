@@ -46,12 +46,10 @@ function statusSelectListenerHandler(e) {
 
 // Event listener for Form Submitted
 
-var formInformation = [];
-
 function formData(event) {
   event.preventDefault();
 
-  var newReport = {
+  var reportData = {
     firstName: event.target.firstName.value,
     lastName: event.target.lastName.value,
     email: event.target.email.value,
@@ -61,15 +59,15 @@ function formData(event) {
     zipCode: event.target.zipcode.value,
     problem: {
       type: event.target.type,
-      text: event.target.comments,
+      text: event.target.comments
     }
   };
 
+  var newReport = new Report(reportData);
+  var localStorageReports = JSON.parse(localStorage.getItem('allReports'));
+  localStorageReports.push(newReport);
 
-  formInformation.push(newReport);
-  new Report(newReport);
-
-  var formInString = JSON.stringify(formInformation);
+  var formInString = JSON.stringify(localStorageReports);
   localStorage.setItem('allReports', formInString);
 
   var clearPage = document.getElementById('non-emergency');
