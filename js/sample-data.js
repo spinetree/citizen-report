@@ -17,7 +17,7 @@ function initSampleData() {
     email: 'cassie.smith2@gmail.com',
     street: '2901 3rd Ave',
     city: 'Seattle',
-    state: 'Washington',
+    state: 'WA',
     zipCode: '98121',
     problem: {
       type: 'road-conditions',
@@ -31,7 +31,7 @@ function initSampleData() {
     email: 'janderson08@hotmail.com',
     street: '2100 Western Ave',
     city: 'Seattle',
-    state: 'Washington',
+    state: 'WA',
     zipCode: '98101',
     problem: {
       type: 'power',
@@ -45,7 +45,7 @@ function initSampleData() {
     email: 'sternoffLeah178@yahoo.com',
     street: '511 Summit Ave E',
     city: 'Seattle',
-    state: 'Washington',
+    state: 'WA',
     zipCode: '98102',
     problem: {
       type: 'traffic',
@@ -53,7 +53,11 @@ function initSampleData() {
     }
   };
 
-  var allReports = [new Report(sample1), new Report(sample2), new Report(sample3)];
+  var allReports = JSON.parse(localStorage.getItem('allReports'));
+
+  if (!allReports || allReports.length === 0) {
+    allReports = [new Report(sample1), new Report(sample2), new Report(sample3)];
+  }
 
   // Load sample data into local storage
   var allReportsString = JSON.stringify(allReports);
