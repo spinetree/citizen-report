@@ -3,22 +3,33 @@
 @import url("form.css");
 
 body {
-    background-color: #dedede;
+    background-color: #B2CED9;
     color: #333333;
 }
 
 header {
     text-align: center;
-    padding: 24px;
+    /* padding: 24px; */
     padding-bottom: 0;
-    border-bottom: 1px;
+    /* border-bottom: 1px; */
+    background-color: #ffeae3;
+    height:
+
 }
 
+header .container {
+    max-width:none;
+}
+
+header img {margin:48px auto 0;}
+
+/* header h3 {margin-top:24px;} */
+
 header nav {
-    background:#bbb;
-    margin: 36px auto 0;
+    background:#041326;
+    margin: 24px auto 0;
+    height:80px;
     display:block;
-    padding:8px 0;
 }
 
 header nav ul {
@@ -28,14 +39,22 @@ header nav ul {
 
 }
 
-header>nav li {
-    /* float: left; */
+header nav li a {
+font: 22px/80px 'Work Sans', helvetica, sans-serif;
+color: #A7C8F2;
+text-transform:uppercase;
+font-weight: 300;
 }
 
-.container {
-    max-width: 960px;
-    margin: 0 auto;
+.container.home {
+    max-width: 600px;
+    margin: 48px auto;
+    box-shadow: 2px 4px 8px 0 rgba(0, 0, 0, 0.2);
+    background-color: #f4f4f4;
 }
+
+/* specific to front page and ffs this is ugly */
+.home h2 {}
 
 .container-fullwidth {
     max-width: none;
@@ -44,6 +63,9 @@ header>nav li {
 main {
     padding: 24px;
     min-height: 480px;
+    max-width:960px;
+    margin:48px auto;
+
 }
 
 .about {
@@ -61,7 +83,7 @@ img {
 
 footer {
     padding: 24px;
-    background: #bbb;
+    background:#041326;
     color: white;
 }
 
@@ -72,11 +94,13 @@ footer nav {
     text-align: left;
 }
 
-footer h3 {
+footer h3, footer h4 {
+    color:#048ABF;
 }
 
 footer ul {}
 
-footer ul li {
+footer ul li, footer ul li a {
     margin: 16px 0 0;
+    color:#A7C8F2;
 }

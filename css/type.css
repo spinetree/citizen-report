@@ -21,7 +21,7 @@ h2 {
     margin-top:24px;
     font-size: 40px;
     line-height: 1.2;
-    font-weight: 500;
+    font-weight: 700;
     text-transform: uppercase;
 }
 
@@ -43,13 +43,14 @@ h4 {
 p {
     margin-top:16px;
     font-size: 14px;
-    line-height: 1.2;
+    line-height: 1.6;
     font-weight: 300;
 }
 
 a {
     text-decoration: none;
     font-weight: 500;
+    color: #048ABF;
 }
 
 a:hover {
