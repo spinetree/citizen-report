@@ -62,7 +62,7 @@ function formData(event) {
       text: event.target.comments
     }
   };
-  console.log(reportData);
+
   var newReport = new Report(reportData);
   var localStorageReports = JSON.parse(localStorage.getItem('allReports'));
   localStorageReports.push(newReport);
