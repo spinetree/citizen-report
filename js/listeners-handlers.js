@@ -58,11 +58,11 @@ function formData(event) {
     state: event.target.state.value,
     zipCode: event.target.zipcode.value,
     problem: {
-      type: event.target.type,
+      type: event.target.issue.value,
       text: event.target.comments
     }
   };
-
+  console.log(reportData);
   var newReport = new Report(reportData);
   var localStorageReports = JSON.parse(localStorage.getItem('allReports'));
   localStorageReports.push(newReport);
