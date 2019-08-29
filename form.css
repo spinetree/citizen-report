@@ -37,6 +37,11 @@
     font-family: 'Work Sans', sans-serif;
 }
 
+#report_form > fieldset > select {
+    height:52px;
+}
+
+
 #report_form>fieldset:nth-child(8)>input {
     width: 100px;
 }
