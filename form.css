@@ -10,7 +10,6 @@
     grid-template: 1fr 2fr; */
 }
 
-
 #report_form label {
     text-align: left;
     display: block;
@@ -38,9 +37,8 @@
 }
 
 #report_form > fieldset > select {
-    height:52px;
+    height: 52px;
 }
-
 
 #report_form>fieldset:nth-child(8)>input {
     width: 100px;
