@@ -2,8 +2,6 @@
 @import url("table.css");
 @import url("form.css");
 
-
-
 body {
     background-color: #B2CED9;
     color: #333333;
@@ -16,8 +14,6 @@ header {
     padding-bottom: 0;
     /* border-bottom: 1px; */
     background-color: #ffeae3;
-    height:
-
 }
 
 header .container {
@@ -71,7 +67,6 @@ main {
     min-height: 480px;
     max-width: 960px;
     margin: 48px auto;
-
 }
 
 .about {
@@ -118,6 +113,5 @@ footer ul li a {
     max-width: 480px;
     display: block;
     box-shadow: 2px 4px 8px 0 rgba(0, 0, 0, 0.2);
-    margin:24px auto;
+    margin: 24px auto;
 }
-
